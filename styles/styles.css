@@ -1,3 +1,8 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Montserrat:ital@0;1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 /* CSS RESET */
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -47,8 +52,41 @@
   #root, #__next {
     isolation: isolate;
   }
+  
+/* GENERAL */
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+ul {
+  padding: 20px;
+}
 
 /* LAYOUT */
+
+:root {
+  --button-color: #197278;
+  --background-color: #e9e9e9;
+  --accent-colot: #C44536;
+  --main-color: #283D3B;
+  --secondary-color: #545555;
+
+}
 
 #grid-container {
   height: 100vh;
@@ -62,15 +100,78 @@
 
 #header {
   grid-area: header;
-  background-color: aquamarine;
+  background-color: white;
 }
 
 #sidebar {
   grid-area: sidebar;
-  background-color: pink;
+  background-color: var(--button-color);
+  display: grid;
+  grid-template-rows: 60px 250px 250px;
+  gap: 25px;
+  font-weight: bold;
 }
 
 #main {
   grid-area: main;
-  background-color: green;
+  background-color: var(--background-color);
 }
+
+/* SIDEBAR */
+
+#sidebar {
+  color: white;
+  font-size: 1.2em;
+}
+
+.logo ul li::before {
+  content: '⭐';
+  margin-right: 10px;
+}
+
+.logo {
+  font-size: 1.4em;
+}
+
+.side-bar-first li:nth-child(1)::before {
+  content: '⭐';
+  margin-right: 10px;
+}
+.side-bar-first li:nth-child(2)::before {
+  content: '⭐';
+  margin-right: 10px;
+}
+.side-bar-first li:nth-child(3)::before {
+  content: '⭐';
+  margin-right: 10px;
+}
+.side-bar-first li:nth-child(4)::before {
+  content: '⭐';
+  margin-right: 10px;
+}
+.side-bar-first li:nth-child(5)::before {
+  content: '⭐';
+  margin-right: 10px;
+}
+.side-bar-first li:nth-child(6)::before {
+  content: '⭐';
+  margin-right: 10px;
+}
+.side-bar-second li:nth-child(1)::before {
+  content: '⭐';
+  margin-right: 10px;
+}
+.side-bar-second li:nth-child(1)::before {
+  content: '⭐';
+  margin-right: 10px;
+}
+.side-bar-second li:nth-child(2)::before {
+  content: '⭐';
+  margin-right: 10px;
+}
+.side-bar-second li:nth-child(3)::before {
+  content: '⭐';
+  margin-right: 10px;
+}
+
+
