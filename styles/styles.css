@@ -60,6 +60,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: var(--main-color);
 }
 
 a {
@@ -264,3 +265,86 @@ img.bird {
 }
 
 /* MAIN */
+
+#main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-areas: 
+  "card announce"
+  "card trends";
+}
+
+#cards{
+  grid-area: card;
+}
+
+#announce {
+  grid-area: announce;
+}
+
+#trends {
+  grid-area: trends;
+  
+}
+
+/* MAIN TRENDS */
+
+.side-container {
+  margin: 0 auto;
+  background-color: white;
+  width: 250px;
+  height: 280px;
+  border-radius: 10px;
+  align-self: self-start;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+.dashboard-side h2 {
+  padding: 10px 0 15px 27px;
+}
+
+.dashboard-card h2 {
+  padding-bottom: 15px;
+  padding-left: 7px;
+}
+
+#announce h2 {
+  padding-top: 25px;
+}
+
+.dashboard-card {
+  padding: 25px 0 10px 20px;
+}
+
+/* CARD */
+
+.card {
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  border-left: 6px solid var(--accent-colot);
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 1fr 1fr;
+  justify-items: end;
+  align-items: end;
+}
+
+#card-container {
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 30px;
+}
+
+.card svg {
+  width: 25px;
+  height: 25px;
+  justify-self: end;
+  display: inline-block;
+}
